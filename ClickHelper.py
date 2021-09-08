@@ -16,18 +16,7 @@ times_clicks=input("How many times you wanna click")
 times_clicks=int(times_clicks)
 print("please click the position that you want this program clicks.\n"
       "press 'e' in keyboard can stop this program")
-print("click within 5 seconds")
-time.sleep(1)
-print("click within 4 seconds")
 
-time.sleep(1)
-print("click within 3 seconds")
-
-time.sleep(1)
-print("click within 2 seconds")
-
-time.sleep(1)
-print("click within 1 seconds")
 
 
 
@@ -45,8 +34,21 @@ def on_click(x, y, button, pressed):
 
 mouse_listener = pynput.mouse.Listener(on_click=on_click)
 mouse_listener.start()
-time.sleep(5)
+print("click within 5 seconds")
+time.sleep(1)
+print("click within 4 seconds")
 
+time.sleep(1)
+print("click within 3 seconds")
+
+time.sleep(1)
+print("click within 2 seconds")
+
+time.sleep(1)
+print("click within 1 seconds")
+
+time.sleep(1)
+print("click within 0 seconds")
 def on_press(key):
     try:
         if format(key.char) == 'e':
